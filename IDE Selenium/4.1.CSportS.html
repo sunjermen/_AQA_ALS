@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://10.26.102.3:7001/" />
+<title>CreateMovie</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">CreateMovie</td></tr>
+</thead><tbody>
+<tr>
+	<td>store</td>
+	<td>javascript{var d = new Date(); var curr_date = d.getDate(); var curr_month = d.getMonth() + 1; var curr_year = d.getFullYear()-2000; mydate=curr_year + &quot;/&quot; + curr_month + &quot;/&quot; + curr_date; }</td>
+	<td>today</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{var d = new Date(); curr_date = d.getDate();}</td>
+	<td>date</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td>key</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Sports Series</td>
+	<td>type</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=createProg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=${type}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=titleInput</td>
+	<td>${today} ${key}ST - ${type}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@id='titleInput'])[2]</td>
+	<td>${today} ${key}ET - ${type}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=descInput</td>
+	<td>${today} ${key}SD - ${type}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=#descriptionContent &gt; div.descriptions.description-content &gt; #descInput</td>
+	<td>${today} ${key}ED - ${type}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=release-Date</td>
+	<td>2016</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='qualifiers']/div/span/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='create-container']/div/div/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='qualifiers']/div/span/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='edit-left']/div[4]/div/span/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//div[@id='create-container']/div/div/a/i)[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='crew']/div/span/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='crew']/div/span/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=crew-search</td>
+	<td>a</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='dropDownList']/ul/li[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='addCrew']/div/a/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=crew-search</td>
+	<td>b</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='dropDownList']/ul/li[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='addCrew']/div/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#myModal &gt; div.modal-footer &gt; a.btn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=runtime_edit</td>
+	<td>30</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select.create-text</td>
+	<td>label=G</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=div.sp-only.additional&nbsp;&nbsp;&gt; input</td>
+	<td>11</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div[@id='edit-left']/div[10]/input</td>
+	<td>22</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div[@id='edit-left']/div[12]/input</td>
+	<td>33</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div[@id='edit-left']/div[13]/input</td>
+	<td>44</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=check-Date</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=${date}</td>
+	<td></td>
+</tr>
+<!--add Venue-->
+<tr>
+	<td>click</td>
+	<td>//div[@id='sp-only additional']/div/span/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=venue-search</td>
+	<td>a</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='dropDownList']/ul/li[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//div[@id='create-container']/div/div/a/i)[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#myModal &gt; div.modal-footer &gt; a.btn</td>
+	<td></td>
+</tr>
+<!--end  Venue-->
+<!--add Team-->
+<tr>
+	<td>click</td>
+	<td>//div[@id='sp-only additional ']/div/span[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=team-search</td>
+	<td>a</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#dropDownList &gt; ul &gt; li</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//div[@id='create-container']/div/div/a/i)[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=team-search</td>
+	<td>b</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='dropDownList']/ul/li[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//div[@id='create-container']/div/div/a)[9]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#myModal &gt; div.modal-footer &gt; a.btn</td>
+	<td></td>
+</tr>
+<!--end Team-->
+<tr>
+	<td>click</td>
+	<td>//div[@id='edit-container']/div[3]/button[10]</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

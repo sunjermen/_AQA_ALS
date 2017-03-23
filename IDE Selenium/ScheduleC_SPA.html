@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://10.26.102.3:7001/" />
+<title>ScheduleC_SPA</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">ScheduleC_SPA</td></tr>
+</thead><tbody>
+<!--initialization-->
+<tr>
+	<td>store</td>
+	<td>javascript{var d = new Date(); var curr_date = d.getDate(); var curr_month = d.getMonth() + 1; var curr_year = d.getFullYear()-2000; mydate=curr_year + &quot;/&quot; + curr_month + &quot;/&quot; + curr_date; }</td>
+	<td>today</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{var d = new Date(); curr_date = d.getDate();}</td>
+	<td>date</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Movie</td>
+	<td>type1</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Shows (Non Series)</td>
+	<td>type2</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Series</td>
+	<td>type3</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Series Episode</td>
+	<td>type4</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Sports Series</td>
+	<td>type5</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Sports Series Episode</td>
+	<td>type6</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Sports Series Episode</td>
+	<td>type6</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>ST -</td>
+	<td>SPA</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>ET -</td>
+	<td>lang</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Sports Series Episode</td>
+	<td>sid</td>
+</tr>
+<!--start test - choose sid -->
+<tr>
+	<td>click</td>
+	<td>id=channel_toggle_container</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=callsignSid</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='VariantsList']/ul/li/span[2]</td>
+	<td></td>
+</tr>
+<!--Create New Version-->
+<tr>
+	<td>click</td>
+	<td>id=Create-Version-btn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=${date}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<!--add program1-->
+<tr>
+	<td>click</td>
+	<td>//a[@id='refresh-icon-toggle']/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=name-search1</td>
+	<td>${today} ${lang} ${type1} </td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=name-search1</td>
+	<td>${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id='list_variants']/li[1]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<!--add program2-->
+<tr>
+	<td>type</td>
+	<td>id=name-search1</td>
+	<td> </td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=name-search1</td>
+	<td>${today} ${lang} ${type2} </td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=name-search1</td>
+	<td>${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id='list_variants']/li[1]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<!--add program3-->
+<tr>
+	<td>type</td>
+	<td>id=name-search1</td>
+	<td> </td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=name-search1</td>
+	<td>${today} ${lang} ${type3} </td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=name-search1</td>
+	<td>${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id='list_variants']/li[1]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<!--add program4-->
+<tr>
+	<td>type</td>
+	<td>id=name-search1</td>
+	<td> </td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=name-search1</td>
+	<td>${today} ${lang} ${type3}&nbsp;&nbsp;11</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=name-search1</td>
+	<td>${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id='list_variants']/li[1]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<!--add program6-->
+<tr>
+	<td>type</td>
+	<td>id=name-search1</td>
+	<td> </td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=name-search1</td>
+	<td>${today} ${lang} ${type5} </td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=name-search1</td>
+	<td>${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id='list_variants']/li[1]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<!--add program2-->
+<tr>
+	<td>type</td>
+	<td>id=name-search1</td>
+	<td> </td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=name-search1</td>
+	<td>${today} ${lang} ${type5} 11 </td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=name-search1</td>
+	<td>${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id='list_variants']/li[1]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<!--set time-->
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[19]</td>
+	<td>04</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[20]</td>
+	<td>00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[21]</td>
+	<td>240</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[23]</td>
+	<td>08</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[23]</td>
+	<td>08</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[24]</td>
+	<td>00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[24]</td>
+	<td>00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[25]</td>
+	<td>240</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[25]</td>
+	<td>240</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[27]</td>
+	<td>12</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[27]</td>
+	<td>12</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[28]</td>
+	<td>00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[28]</td>
+	<td>00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[29]</td>
+	<td>240</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[29]</td>
+	<td>240</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[31]</td>
+	<td>16</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[31]</td>
+	<td>16</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[32]</td>
+	<td>00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[32]</td>
+	<td>00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[33]</td>
+	<td>240</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[33]</td>
+	<td>240</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[35]</td>
+	<td>20</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[35]</td>
+	<td>20</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[36]</td>
+	<td>00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[36]</td>
+	<td>00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[37]</td>
+	<td>240</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[37]</td>
+	<td>240</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input.targ</td>
+	<td>240</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input.targ</td>
+	<td>240</td>
+</tr>
+<!--save version of schedule-->
+<tr>
+	<td>click</td>
+	<td>id=activate-all-event-btn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=activeAllPrgChk</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=activeSchedChk</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#sched-action-modal &gt; div.modal-footer &gt; button.btn.btn-primary</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
